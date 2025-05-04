@@ -18,29 +18,24 @@
     }
 
     .page-intro {
-        font-size: 1.2em;
-        line-height: 1.8;
-        color: $color-secondary;
-        margin-bottom: 20px;
+        font-size: 1.4em;
+        line-height: 1.6;
+        margin-bottom: 0;
+        color: $color-text-primary;
+        padding: 0 20px;
 
         &__title {
             font-family: $font-stack-title;
-            font-size: 2.5em;
+            font-size: 2em;
             margin: 0;
             padding: 0;
-            color: $color-secondary;
-        }
-
-        &__cssac-website {
-            font-size: 0.8em;
-
-            @include bp-large {
-                float: right;
-                margin-top: 15px;
-            }
+            color: $color-primary;
         }
 
         p {
+            margin: 0;
+            padding: 0;
+            color: $color-text-alt;
             a {
                 &:hover,
                 &:active {
