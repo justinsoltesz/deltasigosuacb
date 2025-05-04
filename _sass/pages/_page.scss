@@ -1,0 +1,286 @@
+.page-wrapper {
+    padding: 0 6%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 1050px;
+    margin: 0 auto 0.2em auto;
+
+    &--wide {
+        padding: 0 5%;
+        max-width: none;
+    }
+
+    &__body {
+        text-align: center;
+        font-size: 2em;
+        margin: 100px 0;
+    }
+
+    .page-intro {
+        font-size: 1.2em;
+        line-height: 1.8;
+        color: $color-secondary;
+        margin-bottom: 20px;
+
+        &__title {
+            font-family: $font-stack-title;
+            font-size: 2.5em;
+            margin: 0;
+            padding: 0;
+            color: $color-secondary;
+        }
+
+        &__cssac-website {
+            font-size: 0.8em;
+
+            @include bp-large {
+                float: right;
+                margin-top: 15px;
+            }
+        }
+
+        p {
+            a {
+                &:hover,
+                &:active {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .item {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+
+        &__title {
+            font-family: $font-stack-title;
+            color: $color-primary;
+            font-size: 2em;
+            margin: 0;
+            padding: 0 0 10px 0;
+            border-bottom: 2px solid $color-border;
+        }
+    }
+
+    .stuff-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 30px;
+        padding-top: 30px;
+        padding-bottom: 100px;
+    }
+
+    .stuff {
+        // background: $color-background-accent;
+        border-radius: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+        width: 100%;
+
+        @include bp-large {
+            width: 48%;
+        }
+
+        &--basic {
+            background: none;
+            border: none;
+        }
+
+        &--full-width {
+            width: 100%;
+        }
+
+        &__title {
+            margin: 0 0 15px 0;
+            font-weight: 900;
+            @include font-roboto-slab(500);
+            color: $color-primary;
+            padding: 0 0 5px 0;
+            border-bottom: 1px solid $color-border;
+        }
+
+        &__text {
+            margin: 0;
+            font-size: 1em;
+            line-height: 1.8;
+            color: $color-text-alt;
+        }
+        
+        &__button {
+            margin-top: 15px;
+        }
+
+        &__link {
+        }
+
+        &__link-type,
+        &__link-date {
+            margin-left: 16px;
+            font-size: 0.8em;
+            opacity: 0.7;
+        }
+
+        &__link-coming-soon {
+            color: $color-text-light;
+            display: block;
+            margin-top: 10px;
+        }
+    }
+}
+
+.page-heading {
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid $color-border;
+
+    &__title {
+        font-size: 3em;
+        font-family: $font-stack-title;
+        color: $color-secondary;
+        margin: 0;
+    }
+
+    &__go-back {
+        
+        .button {
+            margin-bottom: 16px;
+        }
+
+        @include bp-large {
+
+            .button {
+                float: right;
+                margin: 6px 0 16px 16px;
+            }
+        }
+    }
+}
+
+.jump-to {
+    text-align: left;
+    margin: -10px 0 20px 0;
+    padding: 0 0 20px 0;
+    border-bottom: 1px dotted #ddd;
+    color: #999;
+    font-size: 16px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+
+    @include bp-large {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    &--top-border {
+        border-top: 2px solid $color-border;
+        margin: 0 0 20px 0;
+        padding: 20px;
+    }
+
+    &__prompt {
+        margin: 0 8px;
+        text-transform: uppercase;
+        font-size: 0.8em;
+    }
+
+    &__link {
+        margin: 0 8px;
+
+        &:link,
+        &:visited {
+            color: #666;
+        }
+
+        &:hover,
+        &:active {
+            text-decoration: underline;
+        }
+    }
+}
+
+.button {
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 9px 24px;
+    margin-right: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    &:link,
+    &:visited {
+        color: $color-text-invert;
+        background: $color-third;
+    }
+
+    &:hover,
+    &:active {
+        color: $color-text-invert;
+        background: $color-third;
+        text-decoration: none;
+    }
+
+    &--light {
+        
+        &:link,
+        &:visited {
+            background: #ddd;
+            color: #666;
+        }
+
+        &:hover,
+        &:active {
+            background: $color-third;
+            color: $color-text-invert;
+        }
+    }
+
+    &__icon {
+        margin-right: 12px;
+
+        &--left {   
+        }
+        
+        &--right {
+            margin-right: 0;
+            margin-left: 8px;
+        }
+    }
+}
+
+.status-container {
+    display: block;
+
+    @include bp-medium {
+        float: right;
+        display: inline-block;
+    }
+}
+
+.status {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: normal;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 10px 0 0 0;
+    display: inline-block;
+    border: 1px solid #ddd;
+
+    @include bp-medium {
+        margin: 0 0 0 15px;
+    }
+
+    &--in-progress {
+        border-color: $color-fourth;
+        color: $color-fourth;
+    }
+}

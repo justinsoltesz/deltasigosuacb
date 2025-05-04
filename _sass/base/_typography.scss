@@ -1,0 +1,39 @@
+$font-stack: 'Roboto', sans-serif;
+$font-stack-title: 'Roboto Slab', sans-serif;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+$font-size-1: 14px;
+
+// <uniquifier>: Use a unique and descriptive class name
+// <wonky>: Use a value from 0 to 1
+// <weight>: Use a value from 100 to 900
+// <softness>: Use a value from 0 to 100
+
+@mixin font-roboto($weight: 400, $style: normal) {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: $weight;
+    font-style: $style;
+}
+
+.roboto-base {
+    @include font-roboto($font-weight-regular);
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+@mixin font-roboto-slab($weight: 400, $style: normal) {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: $weight;
+    font-style: $style;
+}
+
+.roboto-slab-base {
+    @include font-roboto-slab($font-weight-regular);
+}
