@@ -1,6 +1,6 @@
 $bp-large: 900px;
-$bp-medium: 600px;
-$bp-small: 400px;
+$bp-medium: 700px;
+$bp-small: 500px;
 
 @mixin bp-large {
     @media only screen and (min-width: $bp-large) {

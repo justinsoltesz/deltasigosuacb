@@ -6,9 +6,13 @@
         @include font-roboto-slab(400);
         padding: 12px 0 6px 0;
         margin: 0 0 16px 0;
-        font-size: 2.5em;
+        font-size: 1.8em;
         color: $color-primary;
         border-bottom: 1px solid $color-border;
+
+        @include bp-medium {
+            font-size: 2.5em;
+        }
     }
 
     h2 {

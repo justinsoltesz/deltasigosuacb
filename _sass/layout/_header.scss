@@ -1,6 +1,4 @@
 .heading {
-    // border-top: 5px solid $color-third;
-    // border-bottom: 5px solid $color-third;
     margin: 0 0 30px 0;
     text-align: center;
 
@@ -16,20 +14,37 @@
         display: inline-block;
         width: 455px;
         height: 90px;
+
+        @include bp-small-max {
+            width: 364px;
+            height: 60px;
+            background-image: url(/assets/images/wordmark_40.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
         
         .logo-text {
             display: none;
         }
-        
+
         @media all and (-webkit-min-device-pixel-ratio: 2) {
             background-image: url(/assets/images/wordmark_100.png);
-           background-size: 455px 50px;
+            background-size: 455px 50px;
+        }
+
+        @media all and (-webkit-min-device-pixel-ratio: 2) and (max-width: $bp-small) {
+            background-image: url(/assets/images/wordmark_80.png);
+            background-size: 364px 40px;
         }
 
         .heading__link {
             height: 90px;
             width: 100%;
             display: block;
+
+            @include bp-small-max {
+                height: 60px;
+            }
         }
     }
 
@@ -39,7 +54,11 @@
         margin: 0;
         color: $color-text-invert;
         @include font-roboto-slab($font-weight-light);
-        font-size: 1.8em;
+        font-size: 1.5em;
+
+        @include bp-medium {
+            font-size: 1.8em;
+        }
         
         em {
             @include font-roboto-slab($font-weight-bold);

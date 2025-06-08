@@ -18,18 +18,26 @@
     }
 
     .page-intro {
-        font-size: 1.4em;
+        font-size: 1.2em;
         line-height: 1.6;
         margin-bottom: 0;
         color: $color-text-primary;
         padding: 0 20px;
 
+        @include bp-medium {
+            font-size: 1.4em;
+        }
+
         &__title {
             font-family: $font-stack-title;
-            font-size: 2em;
+            font-size: 1.6em;
             margin: 0;
             padding: 0;
             color: $color-primary;
+
+            @include bp-medium {
+                font-size: 2em;
+            }
         }
 
         p {
@@ -91,10 +99,15 @@
         &__title {
             margin: 0 0 15px 0;
             font-weight: 900;
+            font-size: 1.6em;
             @include font-roboto-slab(500);
             color: $color-primary;
             padding: 0 0 5px 0;
             border-bottom: 1px solid $color-border;
+
+            @include bp-medium {
+                font-size: 2em;
+            }
         }
 
         &__text {
@@ -239,7 +252,9 @@
     }
 
     &--inline {
-        display: inline-block;
+        @include bp-medium {
+            display: inline-block;
+        }
     }
 
     &__icon {
