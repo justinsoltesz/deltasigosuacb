@@ -14,7 +14,7 @@ The ACB typically meets at The Pyramid (1952 Iuka Ave, Columbus, OH 43201) sever
 - Sunday, March 15, 2026, at 1 pm at The Pyramid
 - Sunday, May 17, 2026, at 1 pm at The Pyramid
 
-<a href="#" class="stuff__button button button--inline">Request virtual participation information</a>
+<a href="https://forms.gle/bA7UnFvU4zTLawd59" class="stuff__button button button--inline">Request virtual participation information</a>
 
 # Alumni Corporation Board Members
 The ACB is made up of nine voting members (also referred to as directors): the undegraduate President and Treasurer of the Alpha Iota undergraduate chapter; the ACB President, Vice President, Secretary, and Treasurer; and three at-large members who chair subcommittees for Housing, Advising, and Alumni Engagement.
