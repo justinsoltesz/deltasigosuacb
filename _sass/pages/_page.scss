@@ -1,10 +1,14 @@
 .page-wrapper {
-    padding: 0 6%;
+    padding: 0 5px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     max-width: 1050px;
     margin: 0 auto 0.2em auto;
+
+    @include bp-small {
+        padding: 0 6%;
+    }
 
     &--wide {
         padding: 0 5%;
