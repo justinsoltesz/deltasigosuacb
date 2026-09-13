@@ -8,10 +8,8 @@ layout: document
 The ACB typically meets at The Pyramid (1952 Iuka Ave, Columbus, OH 43201) quarterly. Virtual participation is also available.
 
 ### Upcoming Meeting Dates
-- Sunday, November 16, 2025, at 1 pm at The Pyramid
-- Sunday, January 11, 2026, at 1 pm at The Pyramid
-- Sunday, March 15, 2026, at 1 pm at The Pyramid
-- Sunday, May 17, 2026, at 1 pm at The Pyramid
+- Sunday, September 13, at 2 pm at The Pyramid
+- Sunday, December 20, 2026, at 2pm hosted virtuall
 
 <a href="https://forms.gle/bA7UnFvU4zTLawd59" class="stuff__button button button--inline">Request virtual participation information</a>
 
@@ -24,7 +22,7 @@ The ACB is made up of nine voting members (also referred to as directors): the u
 - **Secretary:** Justin Soltesz
 - **Treasurer:** Jack Beecroft
 - **Director of Chapter Housing:** *vacant*
-- **Director of Chapter Advising:** *vacant*
+- **Director of Chapter Advising:** Dylan MacDowell
 - **Director of Alumni Engagement:** Wes Taylor
 
 # Alumni Corporation Bylaws

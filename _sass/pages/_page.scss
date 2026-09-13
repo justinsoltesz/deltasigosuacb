@@ -104,7 +104,8 @@
             margin: 0 0 15px 0;
             font-weight: 900;
             font-size: 1.6em;
-            @include font-roboto-slab(500);
+            // @include font-roboto-slab(500);
+            @include font-lato($font-weight-black);
             color: $color-primary;
             padding: 0 0 5px 0;
             border-bottom: 1px solid $color-border;
